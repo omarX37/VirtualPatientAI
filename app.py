@@ -13,7 +13,7 @@ APP_DIR = os.path.dirname(os.path.abspath(__file__))
 DB_PATH = os.path.join(APP_DIR, "database", "virtual_patients.db")
 os.makedirs(os.path.dirname(DB_PATH), exist_ok=True)
 
-st.set_page_config(page_title="Virtual Patient AI | Clinical Lab", page_icon="✚", layout="wide", initial_sidebar_state="expanded")
+st.set_page_config(page_title="Virtual Patient AI | Clinical Lab", page_icon="✚", layout="wide", initial_sidebar_state="collapsed")
 
 # Language preferences are stored beside the app only when the user opts in.
 PREFS_PATH = os.path.join(APP_DIR, "user_preferences.json")
